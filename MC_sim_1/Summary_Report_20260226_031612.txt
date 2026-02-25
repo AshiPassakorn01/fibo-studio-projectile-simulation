@@ -1,0 +1,78 @@
+========================================================
+ MONTE CARLO SIMULATION - STATISTICAL SUMMARY REPORT
+========================================================
+Date & Time: 2026-02-26 03:16:14
+
+[ BASE PARAMETERS ]
+- Pitch Angle  : 75.18 deg
+- Yaw Angle    : 0.00 deg
+- Air Pressure : 0.5 bar
+- Firing Delay : 2.312 sec
+
+[ ANALYTICAL BOUNDARIES ]
+Distance (L) = 1.65 m
+Target Rad (R) = 60 mm
+Pitch Sensitivity (Sp) = 101.3 mm/deg
+
+[Absolute Limits]
+Max Pitch (if Yaw=0) = ±0.592°
+Max Yaw (if Pitch=0) = ±2.083°
+
+[Conditional Limits]
+Given Yaw Err ±1.1° --> Allowed Pitch ±0.503°
+Given Pitch Err ±0.15° --> Allowed Yaw ±2.015°
+
+Eq: P_allow = sqrt(R² - (L*tan(Yaw))²) / Sp
+
+[ ERROR SETTINGS (NOISE) ]
+- Total Shots    : 200 shots per case
+- Target Radius  : 60 mm
+- Pitch Error    : +/- 0.15 deg
+- Yaw Error      : +/- 1.1 deg
+- Pressure Error : +/- 0.01 bar
+- Delay Error    : +/- 0.01 sec
+
+[ STATISTICAL RESULTS ]
+--- 1: Pitch Err (±0.15°) ---
+  > Hits / Misses : 200 / 0
+  > Hit Rate      : 100.00 %
+  > Max Error     : 15.08 mm
+  > Mean Error    : 7.88 mm
+  > Std Deviation : 4.47 mm
+
+--- 2: Yaw Err (±1.1°) ---
+  > Hits / Misses : 200 / 0
+  > Hit Rate      : 100.00 %
+  > Max Error     : 31.61 mm
+  > Mean Error    : 14.92 mm
+  > Std Deviation : 9.05 mm
+
+--- 3: Combined Angle (±0.15°, ±1.1°) ---
+  > Hits / Misses : 200 / 0
+  > Hit Rate      : 100.00 %
+  > Max Error     : 34.27 mm
+  > Mean Error    : 17.99 mm
+  > Std Deviation : 7.95 mm
+
+--- 4: Pressure Err (±0.01 bar) ---
+  > Hits / Misses : 200 / 0
+  > Hit Rate      : 100.00 %
+  > Max Error     : 32.81 mm
+  > Mean Error    : 16.78 mm
+  > Std Deviation : 9.56 mm
+
+--- 5: Delay Err (±0.01 s) ---
+  > Hits / Misses : 200 / 0
+  > Hit Rate      : 100.00 %
+  > Max Error     : 13.29 mm
+  > Mean Error    : 6.54 mm
+  > Std Deviation : 3.87 mm
+
+--- 6: ALL ERRORS COMBINED ---
+  > Hits / Misses : 200 / 0
+  > Hit Rate      : 100.00 %
+  > Max Error     : 53.43 mm
+  > Mean Error    : 26.42 mm
+  > Std Deviation : 10.89 mm
+
+================ END OF REPORT ================

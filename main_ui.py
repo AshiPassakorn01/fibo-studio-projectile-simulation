@@ -10,7 +10,7 @@ class ControlWindow:
     def __init__(self):
         self.root = tk.Tk()
         self.root.title("Projectile & Timing Simulator")
-        self.root.geometry("480x800") 
+        self.root.geometry("400x720") 
         
         self.data = tools.load_data()
         self.mode_var = tk.StringVar(value=self.data.get('mode', 'inverse'))
@@ -41,12 +41,12 @@ class ControlWindow:
         btn_frame = tk.Frame(self.root)
         btn_frame.pack(fill=tk.X, pady=10)
         
-        tk.Button(btn_frame, text="🚀 Run Simulation", font=("Arial", 12, "bold"), bg="#4CAF50", fg="white", cursor="hand2", command=self.run_simulation, width=22, height=2).pack(pady=5)
+        tk.Button(btn_frame, text="Run Simulation", font=("Arial", 12, "bold"), bg="#4CAF50", fg="white", cursor="hand2", command=self.run_simulation, width=22, height=2).pack(pady=5)
         
         file_btn_frame = tk.Frame(btn_frame)
         file_btn_frame.pack(pady=5)
-        tk.Button(file_btn_frame, text="💾 Save Result", font=("Arial", 10, "bold"), bg="#0275d8", fg="white", cursor="hand2", command=self.save_simulation, width=12).grid(row=0, column=0, padx=5)
-        tk.Button(file_btn_frame, text="📂 Load Sim", font=("Arial", 10, "bold"), bg="#f0ad4e", fg="white", cursor="hand2", command=self.load_simulation, width=12).grid(row=0, column=1, padx=5)
+        tk.Button(file_btn_frame, text="Save Result", font=("Arial", 10, "bold"), bg="#0275d8", fg="white", cursor="hand2", command=self.save_simulation, width=12).grid(row=0, column=0, padx=5)
+        tk.Button(file_btn_frame, text="Load Sim", font=("Arial", 10, "bold"), bg="#f0ad4e", fg="white", cursor="hand2", command=self.load_simulation, width=12).grid(row=0, column=1, padx=5)
 
         self.update_table()
 

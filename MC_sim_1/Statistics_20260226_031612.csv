@@ -1,0 +1,7 @@
+Case,Total_Shots,Hits,Misses,Hit_Rate_Pct,Max_Error_mm,Mean_Error_mm,Std_Dev_mm
+1: Pitch Err (±0.15°),200,200,0,100.00,15.08,7.88,4.47
+2: Yaw Err (±1.1°),200,200,0,100.00,31.61,14.92,9.05
+"3: Combined Angle (±0.15°, ±1.1°)",200,200,0,100.00,34.27,17.99,7.95
+4: Pressure Err (±0.01 bar),200,200,0,100.00,32.81,16.78,9.56
+5: Delay Err (±0.01 s),200,200,0,100.00,13.29,6.54,3.87
+6: ALL ERRORS COMBINED,200,200,0,100.00,53.43,26.42,10.89
